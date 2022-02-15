@@ -1,0 +1,28 @@
+.Crumbs
+  background: #F8F9F8
+  .breadcrumb
+    display: flex
+    flex-wrap: wrap
+    font:
+      size: .8rem
+      weight: 400
+    margin: 1rem 0
+    text-transform: uppercase
+    .breadcrumb-item
+      padding: 0 .2rem
+      &.active
+        padding: 0 .2rem
+    a
+      font:
+        weight: 400
+      text-transform: uppercase
+      margin: 0 .3rem
+      padding: 0 .4rem 0 0
+      text-decoration: none
+      color: #FFCC15
+      position: relative
+      &::after
+        color: #000
+        content: '/'
+        position: absolute
+        right: 0

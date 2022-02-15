@@ -1,0 +1,149 @@
+.catalog
+  margin-bottom: 3rem
+  &__menu
+    &__name
+      margin-top: 3.8rem
+      font:
+          size: 2.2rem
+          weight: 700
+      text-align: center
+      text-transform: uppercase
+  &__list
+    .link
+      background: #fff
+      display: flex
+      align-items: center
+      margin-bottom: 2.6rem
+      @media ( max-width:460px )
+        flex-direction: column
+        
+      &:hover
+        background: #fff
+        .link_item
+          &__name
+            border-bottom: 2px solid #FFCC15
+      img
+        margin: 1rem
+        width: 82px
+        max-width: none
+        height: 82px
+        background: #FFCC15
+        border-radius: 50px
+      .link_item
+        &__name
+          border-bottom: 2px solid #fff
+          font:
+            size: 1.1rem
+            weight: 700
+          text-align: center
+  &__h1
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 2rem
+    margin-top: 3rem
+    h1
+      font:
+        size: 2.2rem
+        weight: 700
+      line-height: 1.1
+      text:
+        align: center
+      @media ( max-width:760px )
+        font:
+          size: 1.6rem
+  &__description
+    
+    font:
+      size: .85rem
+    p
+      margin-bottom: 1.1rem
+      strong
+        font:
+          size: 1.1rem
+          weight: 700
+  &__pictures
+    display: flex
+    align-items: flex-start
+    justify-content: center
+  &__link_site
+    text-align: center
+    a
+      
+      font:
+        size: 1.33rem
+      text-transform: uppercase
+      text-decoration: none
+      color: #222
+/////ГЕОГРАФИЯ
+.catalog
+  &__navi
+    h3
+      font:
+        weight: 700
+    ul
+      li
+        margin: .3rem 0
+        a
+          background: #F8F9F8
+          text-transform: none
+          text-decoration: none
+          color: #000
+          padding: .5rem 1rem
+          display: block
+          &:hover
+            background: #FFCC15
+    &__mobi
+      position: fixed !important
+      z-index: 99
+      bottom: 0
+      background: #FFCC15
+      width: 100%
+      left: 0
+      display: none
+      justify-content: space-between
+      align-items: center
+      margin: 0 !important
+      @media ( max-width:990px )
+        display: flex
+      h3
+        z-index: 88
+        font:
+          size: .9rem
+        padding: .1rem 1rem
+      .mobijobs
+        z-index: 99
+      &__list
+        display: none
+        li
+          margin: .1rem 0
+          a
+            background: #FFCC15
+            text-transform: none
+            text-decoration: none
+            color: #000
+            padding: .4rem 1rem
+            display: block
+            font:
+              size: .8rem
+            &:hover
+              background: #FFCC15
+
+        &.active
+          width: 100%
+          height: 100%
+          margin-bottom: 3rem
+          position: fixed
+          z-index: 1
+          top: 0
+          left: 0
+          padding: 1rem
+          padding-top: 3.5rem
+          background: #F8F9F8
+          display: flex
+          flex-direction: column
+          overflow: auto
+
+
+
+      
